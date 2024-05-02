@@ -13,4 +13,12 @@
         <h1>
            <em>PHP Hotel</em>
         </h1>
+        <form action="index.php" method="GET">
+            <select name="search">
+                <option value="all">All</option>
+                <option value="1">parcheggio trovato</option>
+                <option value="0">parcheggio non trovato</option>
+            </select>
+            <button class="btn btn-primary" type="submit">search..</button>
+        </form>
     </header>
