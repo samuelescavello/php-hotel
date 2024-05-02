@@ -7,6 +7,8 @@
         include __DIR__ . "/views/table.php";
     ?>    
 </main>
-    
+<?php
+     include __DIR__ . "/views/footer.php";
+?>
 </body>
 </html>
