@@ -40,4 +40,16 @@
 
     ];
 
+    function getHotels ($hotels)
+    {
+        if(!empty($_GET['search']) || isset($_GET['search']) && $_GET['search'] == 0){
+            $search = $_GET['search'];
+            $newhotel = array_filter($hotels, function($hotel) use ($search){
+                return $hotel ['parking'] == $search || $search == "all";
+            });
+        }else{
+            $newhotel = $hotels;
+        }
+    }
+
 ?>
